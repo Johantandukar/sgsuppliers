@@ -1,0 +1,188 @@
+/* ============================================================
+   SG SUPPLIERS — DESIGN TOKENS
+   Theme: Concept 05 — Sky Blue modern, clean, Kathmandu
+   ============================================================ */
+
+:root {
+  /* ── PRIMITIVE TOKENS ─────────────────────────── */
+
+  /* Sky Blue Palette (primary brand) */
+  --prim-sky-50:  #E6F1FB;
+  --prim-sky-100: #C8DFFE;
+  --prim-sky-200: #9DC7F5;
+  --prim-sky-300: #85B7EB;
+  --prim-sky-400: #5A9FE0;
+  --prim-sky-500: #378ADD;  /* Core brand blue */
+  --prim-sky-600: #2570BF;
+  --prim-sky-700: #185FA5;  /* Deep blue */
+  --prim-sky-800: #0C447C;  /* Navy anchor */
+  --prim-sky-900: #082E57;
+  --prim-sky-950: #04192E;
+
+  /* Neutral Palette */
+  --prim-white:    #ffffff;
+  --prim-gray-50:  #f8fafc;
+  --prim-gray-100: #f1f5f9;
+  --prim-gray-200: #e2e8f0;
+  --prim-gray-300: #cbd5e1;
+  --prim-gray-400: #94a3b8;
+  --prim-gray-500: #64748b;
+  --prim-gray-600: #475569;
+  --prim-gray-700: #334155;
+  --prim-gray-800: #1e293b;
+  --prim-gray-900: #0f172a;
+
+  /* Status */
+  --prim-green-500: #22c55e;
+  --prim-red-500:   #ef4444;
+  --prim-amber-400: #fbbf24;
+
+  /* ── SEMANTIC TOKENS ──────────────────────────── */
+
+  /* Brand */
+  --color-brand-primary:   var(--prim-sky-500);  /* #378ADD — core blue */
+  --color-brand-secondary: var(--prim-sky-300);  /* #85B7EB — mid sky accent */
+  --color-brand-dark:      var(--prim-sky-950);
+  --color-brand-mid:       var(--prim-sky-700);  /* #185FA5 */
+  --color-brand-accent:    var(--prim-sky-50);   /* #E6F1FB — sky tint */
+  --color-brand-navy:      var(--prim-sky-800);  /* #0C447C — deep navy */
+
+  /* Surface */
+  --color-surface-base:    var(--prim-white);
+  --color-surface-subtle:  var(--prim-gray-50);
+  --color-surface-muted:   var(--prim-gray-100);
+  --color-surface-inverse: var(--prim-sky-950);
+
+  /* Text */
+  --color-text-primary:   var(--prim-gray-900);
+  --color-text-secondary: var(--prim-gray-600);
+  --color-text-muted:     var(--prim-gray-400);
+  --color-text-inverse:   var(--prim-white);
+  --color-text-accent:    var(--prim-sky-500);
+
+  /* Border */
+  --color-border-default: var(--prim-gray-200);
+  --color-border-strong:  var(--prim-gray-300);
+  --color-border-brand:   var(--prim-sky-500);
+
+  /* Feedback */
+  --color-success: var(--prim-green-500);
+  --color-error:   var(--prim-red-500);
+  --color-info:    var(--prim-sky-500);
+
+  /* ── TYPOGRAPHY TOKENS ────────────────────────── */
+  --font-display: 'DM Serif Display', 'Playfair Display', Georgia, serif;
+  --font-body:    'Plus Jakarta Sans', 'DM Sans', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+  --text-7xl:  4.5rem;
+
+  --leading-tight:  1.2;
+  --leading-snug:   1.35;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.65;
+
+  --tracking-tight: -0.03em;
+  --tracking-snug:  -0.01em;
+  --tracking-wide:  0.06em;
+  --tracking-wider: 0.14em;
+  --tracking-widest:0.2em;
+
+  /* ── SPACING TOKENS ───────────────────────────── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ── RADIUS TOKENS ────────────────────────────── */
+  --radius-sm:   0.375rem;
+  --radius-md:   0.75rem;
+  --radius-lg:   1rem;
+  --radius-xl:   1.5rem;
+  --radius-2xl:  2rem;
+  --radius-full: 9999px;
+
+  /* ── SHADOW TOKENS ────────────────────────────── */
+  --shadow-sm:  0 1px 3px rgba(8,46,87,0.08), 0 1px 2px rgba(8,46,87,0.04);
+  --shadow-md:  0 4px 16px rgba(8,46,87,0.10), 0 2px 6px rgba(8,46,87,0.06);
+  --shadow-lg:  0 12px 32px rgba(8,46,87,0.14), 0 4px 12px rgba(8,46,87,0.08);
+  --shadow-xl:  0 24px 48px rgba(8,46,87,0.18), 0 8px 20px rgba(8,46,87,0.10);
+  --shadow-blue: 0 8px 32px rgba(55,138,221,0.28);
+
+  /* ── ANIMATION TOKENS ─────────────────────────── */
+  --duration-fast:   150ms;
+  --duration-normal: 250ms;
+  --duration-slow:   400ms;
+  --duration-slower: 600ms;
+
+  --ease-standard:  cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-decelerate:cubic-bezier(0, 0, 0.2, 1);
+  --ease-accelerate:cubic-bezier(0.4, 0, 1, 1);
+  --ease-spring:    cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Z-INDEX TOKENS ───────────────────────────── */
+  --z-base:    0;
+  --z-raised:  10;
+  --z-overlay: 100;
+  --z-modal:   200;
+  --z-nav:     300;
+  --z-toast:   400;
+
+  /* ── COMPONENT TOKENS ─────────────────────────── */
+  --btn-primary-bg:      var(--prim-sky-500);
+  --btn-primary-hover:   var(--prim-sky-700);
+  --btn-primary-text:    var(--prim-white);
+  --btn-accent-bg:       var(--prim-sky-800);
+  --btn-accent-hover:    var(--prim-sky-900);
+  --btn-accent-text:     var(--prim-white);
+  --btn-height-md:       3rem;
+  --btn-height-lg:       3.5rem;
+  --btn-padding-md:      0 1.5rem;
+  --btn-padding-lg:      0 2rem;
+  --btn-radius:          var(--radius-sm);
+  --btn-font-weight:     600;
+
+  --nav-height:          4.5rem;
+  --nav-bg:              rgba(4,25,46,0.96);
+  --nav-bg-scrolled:     rgba(4,25,46,0.99);
+
+  --card-bg:             var(--prim-white);
+  --card-border:         var(--prim-gray-200);
+  --card-radius:         var(--radius-xl);
+  --card-padding:        var(--space-8);
+  --card-shadow:         var(--shadow-md);
+  --card-shadow-hover:   var(--shadow-xl);
+
+  --section-padding-y:   var(--space-24);
+  --container-max:       80rem;
+  --container-padding:   var(--space-6);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast:   0ms;
+    --duration-normal: 0ms;
+    --duration-slow:   0ms;
+    --duration-slower: 0ms;
+  }
+}
